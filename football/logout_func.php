@@ -1,0 +1,15 @@
+<?php
+	session_start();
+	unset($_SESSION["email"]);
+	unset($_SESSION["login"]);
+	unset($_SESSION["id_user"]);
+	unset($_SESSION["user_name"]);
+	unset($_SESSION["user_sex"]);
+	unset($_SESSION["user_city"]);
+	unset($_SESSION["user_about"]);
+	unset($_SESSION["user_fav_sportsmen"]);
+	unset($_SESSION["user_fav_clubs"]);
+	unset($_SESSION["reg_date"]);
+	unset($_SESSION["is_admin"]);
+	header("Location:index.php");
+?>
